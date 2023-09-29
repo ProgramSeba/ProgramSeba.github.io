@@ -1,0 +1,40 @@
+/* Estilos generales para pantallas más grandes (por defecto) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilos específicos para dispositivos móviles (menos de 768px de ancho) */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column; /* Apila las diapositivas verticalmente en dispositivos móviles */
+        overflow-x: hidden; /* Deshabilita el desplazamiento horizontal en dispositivos móviles */
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}

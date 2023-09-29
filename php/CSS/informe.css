@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.foto{
+    background: url(../../img/Perfil.jpeg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+.separador{
+    height: 50px;
+}
+
+.informe-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+  }
+  
+  thead th {
+    background-color: #333;
+    color: white;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+
+  /* Estilo para el enlace "Volver a la lista de pacientes" */
+.volver-link {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para el enlace al pasar el mouse */
+.volver-link:hover {
+    background-color: #258cd1;
+}
+
+.descargar{
+    
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Consulta de medios para dispositivos con un ancho máximo de 767px (pantallas móviles) */
+@media (max-width: 767px) {
+    table {
+        width: 100%; /* Hacer que la tabla ocupe el 100% del ancho disponible */
+    }
+
+    /* Estilo para las celdas en dispositivos móviles */
+    tbody td {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    tbody td::before {
+
+        content: attr(data-title); /* esto hace que lo que esta denominado anteriormente los titulos 
+        aparezcan aqui pero con  la configuracion que voy a poner */
+        font-weight: bold;
+        display: block;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    thead {
+        display: none;
+    }
+
+}

@@ -1,0 +1,55 @@
+/* Estilos para el cuerpo del documento */
+body {
+  background-color: #161883; /* Color para el fondo */
+  text-align: center; /* Texto centrado */
+  margin: 20px; /* Margen exterior*/
+}
+
+/* Estilos para la clase "titulo" */
+.titulo {
+  border-radius: 1rem; /* Borde redondeado */
+  text-align: center; /* Texto centrado */
+  height: 250px; /* Altura fija */
+  color: red; /* Color del texto */
+  font-size: 55px; /* Tamaño de la fuente */
+  font-family: Arial; /* Tipo de fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Estilos para la clase "audio" */
+.audio {
+  display: none; /* Elementos ocultos */
+}
+
+/* Estilos para la clase "consulta" */
+.consulta {
+  display: inline-block; /* Mostrar como elementos en línea */
+  background-color: aliceblue; /* Color para el fondo */
+  color: red; /* Color del texto */
+  border-radius: 5px; /* Borde redondeado */
+  border: 2px solid black; /* Borde sólido negro */
+  font-size: 40px; /* Tamaño de la fuente */
+  margin: 20px; /* Margen exterior */
+  padding: 10px; /* espacio adicional alrededor del contenido */
+  width: 400px; /* Ancho fijo */
+  font-family: Arial; /* Tipo de fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+.boton {
+
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  color: red;
+  border-radius: 5px; /* Borde redondeado */
+  border: 2px solid black; /* Borde sólido negro */
+  background-color: aliceblue; /* Color para el fondo */
+  
+}
+
+.boton:hover {
+
+  transform: scale(1.1); /*Hacer que el botón se agrande un poco al pasar el mouse*/
+}

@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background: url(../../img/Fondo.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.barra h2{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.separador{
+    height: 50px;
+}
+
+
+.publicidad{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    position: absolute; 
+    text-align: center;
+    /*aqui no me dejaba central el boton, me recomendo hacerlo asi, es como que lo esta forzando a hacerlo*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+.users-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.users-form form input{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.users-form form input[type=text],
+.users-form form input[type=password],
+.users-form form input[type=email]{
+    padding: 8px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    outline:none;
+    transition:.3s;
+}
+
+.users-form form input[type=text]:focus,
+.users-form form input[type=password]:focus,
+.users-form form input[type=password]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 6px 0 dodgerBlue;
+}
+
+.users-form form input[type=submit]{
+    border: none;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #60a100;
+}
+
+.users-form form input[type=submit]:hover {
+    background-color: #60a100;
+    color: white;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .users-form form input[type="submit"] {
+        width: auto; 
+        margin: 0 auto; 
+    }
+
+    .users-form {
+        text-align: center; 
+    }
+    .users-form form {
+        width: 80%;
+    }
+
+    html{
+        height: 100%;
+        
+    }
+}

@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.foto{
+    background: url(../../img/Perfil.jpeg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+.separador{
+    height: 50px;
+}
+
+
+
+/* Estilo para la tabla */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+  }
+  
+  thead th {
+    background-color: #333;
+    color: white;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .descargar{
+    
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}

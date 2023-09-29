@@ -1,0 +1,154 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo y fuente */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.foto{
+    background: url(../../img/Perfil.jpeg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+/* Contenedor principal */
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Filtros y formulario */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter-item {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.filter-item select,
+.filter-item input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Tabla de resultados */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.results-table th,
+.results-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para la tabla de resultados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Estilo para las filas impares */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+/* Estilo para el encabezado de la tabla */
+.table-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/* Botón de volver */
+.vuelta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vuelta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .filter-item {
+        flex: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .vuelta a {
+        display: block;
+    }
+}
